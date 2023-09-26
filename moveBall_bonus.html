@@ -1,0 +1,107 @@
+<div id="ball1" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:green"></div>
+  <div id="ball2" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:200px;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:blue"></div>
+ <div id="ball3" style="
+ z-index:5;
+ position:absolute;
+ left:275px;
+ top:200px;
+ width:100px;
+ height:100px;
+ border-radius:50%;
+ background:red"></div>
+<script>
+
+var velocityX1 = 5;
+var positionX1 = 0;
+var ball1 = document.getElementById('ball1');
+var reverse1 = false;
+// YOUR CODE 
+// ----------------
+function moveBall1(){
+  var Xmin = 0;
+  var Xmax = 400;
+  if (reverse1){
+    positionX1 = positionX1 - velocityX1;
+    ball1.style.left = positionX1 + "px";
+  }else{
+    positionX1 = positionX1+ velocityX1;
+    ball1.style.left = positionX1+ "px";
+
+  }
+  if( positionX1 > Xmax ||
+     positionX1=== Xmin
+    )  {
+    reverse1 = !reverse1;
+  }
+  return positionX1;
+}
+setInterval(moveBall1,150);
+
+var velocityX2 = 5;
+var positionX2 = 0;
+var ball2 = document.getElementById('ball2');
+var reverse2 = false;
+// YOUR CODE 
+// ----------------
+function moveBall2(){
+  var Xmin = 0;
+  var Xmax = 200;
+  if (reverse2){
+    positionX2 = positionX2 - velocityX2;
+    ball2.style.left = positionX2 + "px";
+  }else{
+    positionX2 = positionX2+ velocityX2;
+    ball2.style.left = positionX2+ "px";
+
+  }
+  if( positionX2 > Xmax ||
+     positionX2=== Xmin
+    )  {
+    reverse2 = !reverse2;
+  }
+  return positionX2;
+}
+setInterval(moveBall2,60);
+
+var velocityX3 = 5;
+var positionX3 = 200;
+var ball3 = document.getElementById('ball3');
+var reverse3 = false;
+// YOUR CODE 
+// ----------------
+function moveBall3(){
+  var Xmin = 0;
+  var Xmax = 200;
+  if (reverse3){
+    positionX3 = positionX3 - velocityX3;
+    ball3.style.top = positionX3 + "px";
+  }else{
+    positionX3 = positionX3+ velocityX3;
+    ball3.style.top = positionX3+ "px";
+
+  }
+  if( positionX3 > Xmax ||
+     positionX3== Xmin
+    )  {
+    reverse3 = !reverse3;
+  }
+  return positionX3;
+}
+setInterval(moveBall3,150);
+</script>
