@@ -10946,7 +10946,7 @@ html {
     padding-bottom: 0.5rem;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 .form-floating input.form-control,
@@ -10978,6 +10978,7 @@ html {
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
+  font-style: italic;
 }
 .masthead .masthead-avatar {
   width: 15rem;
