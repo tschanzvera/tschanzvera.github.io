@@ -10974,6 +10974,7 @@ html {
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
+  font-style: italic;
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
