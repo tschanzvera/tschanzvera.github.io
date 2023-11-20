@@ -90,6 +90,9 @@
     scroll-behavior: smooth;
   }
 }
+.wave{
+  background-image: url("assets/img/wave.jpeg");
+}
 
 body {
   margin: 0;
@@ -5234,7 +5237,7 @@ textarea.form-control-lg {
 }
 
 .modal {
-  --bs-modal-zindex: 1055;
+  --bs-modal-zindex: 105
   --bs-modal-width: 500px;
   --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
