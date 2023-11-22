@@ -16,3 +16,7 @@ If you have any questions please contact www.linkedin.com/in/vera-tschanz-500258
 I hope to update my portfolio 
 
 I hope to have a lot more projects 
+
+## LICENSE
+
+MIT License
