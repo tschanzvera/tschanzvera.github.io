@@ -17,11 +17,21 @@
   
 }
  #introvideo{
- width: 200px;
- 
-
-
+    width: 200px
  }
+#blocky{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+#portfolio{
+    background-image: url('../assets/img/waves2.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* This property ensures the image covers the entire container */
+    background-position: center;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
